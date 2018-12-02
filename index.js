@@ -66,7 +66,10 @@ function toSingular(unit) {
  * @returns {string} - First letter capitalized of the abbreviation
  */
 function capitalFirstLetter(unit, abbr) {
-    return unit.charAt(0) === unit.charAt(0).toUpperCase() ? abbr.charAt(0).toUpperCase() : abbr;
+    if (unit.charAt(0) === unit.charAt(0).toUpperCase()) {
+        return abbr.charAt(0).toUpperCase() + abbr.substr(1);
+    }
+    return abbr;
 };
 
 /**
