@@ -1,6 +1,6 @@
 'use strict';
 
-// Units/Terms data
+/** Units/Terms data */
 const Units = {
 
     // Height/Length/Distance/Range/Depth
@@ -21,7 +21,7 @@ const Units = {
     ounce: 'oz',
     pound: 'lb',
 
-    // Volume/Capacity 
+    // Volume/Capacity
     cup: 'c',
     gallon: 'gal',
     liter: 'l',
@@ -46,7 +46,11 @@ const Units = {
     'nautical miles per hour': 'kn'
 };
 
-// If the unit is plural convert it to singular form
+/**
+ * If the unit is plural convert it to singular form
+ * @param {string} unit - The unit we are obtaining the abbreviation of
+ * @returns {string} - The converted unit to singular form
+ */
 function toSingular(unit) {
     if(unit.endsWith('es')) {
         return unit.slice(0, -2);
@@ -56,12 +60,21 @@ function toSingular(unit) {
     return unit;
 };
 
-// Check if the original unit was capitalize and capitalize the first letter of the abbreviation
+/**
+ * Check if the original unit was capitalize and capitalize the first letter of the abbreviation
+ * @param {string} unit - The unit we are obtaining the abbreviation of  
+ * @param {string} abbr - The abbreviation
+ * @returns {string} - First letter capitalized of the abbreviation
+ */
 function capitalFirstLetter(unit, abbr) {
     return unit.charAt(0) === unit.charAt(0).toUpperCase() ? abbr.charAt(0).toUpperCase() : abbr;
 };
 
-// The public abbreviation conversion method
+/**
+ * The public abbreviation conversion method
+ * @param {string} unit - The unit we are obtaining the abbreviation of
+ * @returns {string} - The abbreviation of the unit if it exists in our Units data
+ */
 export function toAbbreviation(unit) {
     if(unit) {
         let abbr = getAbbr(toSingular(unit.toLowerCase()));
