@@ -1,0 +1,25 @@
+{
+  "name": "unit-abbreviation",
+  "version": "1.0.0",
+  "description": "This package converts units or terms to their respective abbreviations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cranzy/unit-abbreviation.git"
+  },
+  "keywords": [
+    "unit",
+    "units",
+    "unit-abbreviation",
+    "abbreviation"
+  ],
+  "author": "Dimitar Dimitrov <cranzy91@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cranzy/unit-abbreviation/issues"
+  },
+  "homepage": "https://github.com/cranzy/unit-abbreviation#readme"
+}
