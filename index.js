@@ -15,7 +15,7 @@ const Units = {
     yard: 'yd',
 
     // Weight
-    kg: 'kg',
+    kilogram: 'kg',
     gram: 'g',
     milligram: 'mg',
     ounce: 'oz',
