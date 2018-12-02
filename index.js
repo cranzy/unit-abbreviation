@@ -75,7 +75,7 @@ function capitalFirstLetter(unit, abbr) {
  * @param {string} unit - The unit we are obtaining the abbreviation of
  * @returns {string} - The abbreviation of the unit if it exists in our Units data
  */
-export function toAbbreviation(unit) {
+module.exports.toAbbreviation = function(unit) {
     if(unit) {
         let abbr = getAbbr(toSingular(unit.toLowerCase()));
         if(typeof abbr !== 'undefined') {
