@@ -8,6 +8,7 @@ const Units = {
     feet: 'ft',
     foot: 'ft',
     inch: 'in',
+    inches: 'in',
     kilometer: 'km',
     meter: 'm',
     mile: 'mi',
@@ -52,9 +53,7 @@ const Units = {
  * @returns {string} - The converted unit to singular form
  */
 function toSingular(unit) {
-    if(unit.endsWith('es')) {
-        return unit.slice(0, -2);
-    } else if (unit.endsWith('s')) {
+    if (unit.endsWith('s')) {
         return unit.slice(0, -1);
     }
     return unit;
