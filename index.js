@@ -77,7 +77,7 @@ function capitalFirstLetter(unit, abbr) {
  */
 module.exports.toAbbreviation = function(unit) {
     if(unit) {
-        let abbr = getAbbr(toSingular(unit.toLowerCase()));
+        let abbr = Units[(toSingular(unit.toLowerCase()))];
         if(typeof abbr !== 'undefined') {
             return capitalFirstLetter(unit, abbr);
         }
