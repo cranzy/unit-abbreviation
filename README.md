@@ -1,2 +1,2 @@
-# unit_conversion_js
-A npm unit conversion library for
+# Unit abbreviation
+A npm library that converts units or terms to their respective abbreviations
