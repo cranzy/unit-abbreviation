@@ -16,8 +16,8 @@
     "unit-abbreviation",
     "abbreviation"
   ],
-  "author": "Dimitar Dimitrov <cranzy91@gmail.com>",
-  "license": "ISC",
+  "author": "Dimitar Dimitrov <dev.dimitar.dimitrov@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/cranzy/unit-abbreviation/issues"
   },
