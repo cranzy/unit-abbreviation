@@ -2,9 +2,10 @@
   "name": "unit-abbreviation",
   "version": "1.0.5",
   "description": "This package converts units or terms to their respective abbreviations",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/cranzy/unit-abbreviation/issues"
   },
-  "homepage": "https://github.com/cranzy/unit-abbreviation#readme"
+  "homepage": "https://github.com/cranzy/unit-abbreviation#readme",
+  "devDependencies": {
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
+  }
 }
