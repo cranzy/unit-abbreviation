@@ -33,7 +33,7 @@ abbr('kilometer');
 abbr('degrees celsius');
 
 // Convert the unit 'Kilogram' to 'Kg'
-abbr('kilogram');
+abbr('Kilogram');
 
 // Conver the unit 'meters' to 'm'
 abbr('meters');
