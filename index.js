@@ -57,7 +57,7 @@ function toSingular(unit) {
         return unit.slice(0, -1);
     }
     return unit;
-};
+}
 
 /**
  * Check if the original unit was capitalize and capitalize the first letter of the abbreviation
@@ -70,7 +70,7 @@ function capitalFirstLetter(unit, abbr) {
         return abbr.charAt(0).toUpperCase() + abbr.substr(1);
     }
     return abbr;
-};
+}
 
 /**
  * Tries to retrieve the abbreviation
@@ -78,12 +78,12 @@ function capitalFirstLetter(unit, abbr) {
  * @returns {string} - The abbreviation for the given unit
  */
 function getAbbr(unit) {
-    let abbr = Units[(unit.toLowerCase())]
+    let abbr = Units[(unit.toLowerCase())];
     if(typeof abbr === 'undefined') {
         abbr = Units[toSingular((unit.toLowerCase()))];
     }
     return abbr;
-};
+}
 
 /**
  * The public abbreviation conversion method
@@ -92,14 +92,14 @@ function getAbbr(unit) {
  */
 function toAbbreviation(unit) {
     if(unit) {
-        let abbr = getAbbr(unit); ;
+        let abbr = getAbbr(unit);
         if(typeof abbr !== 'undefined') {
             return capitalFirstLetter(unit, abbr);
         }
         return `No abbreviation found for ${unit}.`;
     }
     return 'No unit passed';
-};
+}
 
 module.exports = toAbbreviation;
 
