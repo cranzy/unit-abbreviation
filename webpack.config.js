@@ -1,4 +1,5 @@
 const path = require('path');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
     entry: './index.js',
@@ -7,16 +8,10 @@ module.exports = {
         filename: './index.js'
     },
 
-    module: {
-        rules: [
-            {
-                enforce: 'pre',
-                test: /\.js$/,
-                loader: 'eslint-loader',
-                options: {
-                    failOnError: true,
-                }
-            }
-        ]
-    }
+    plugins: [
+        new ESLintPlugin({
+            failOnError: true,
+            configType: 'flat'
+        })
+    ]
 };
